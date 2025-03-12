@@ -1,0 +1,61 @@
+/* Основные стили для страницы */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fcd3e0; /* нежно-розовый фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для контейнера */
+.container {
+    text-align: center;
+    position: relative;
+}
+
+/* Стили для кнопки */
+button {
+    background-color: #ff4d4d; /* красная кнопка */
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1a1a; /* эффект при наведении */
+}
+
+/* Стили для сообщения */
+#message {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff1a1a;
+    margin-top: 20px;
+    display: none; /* Изначально скрыто */
+}
+
+/* Анимация для сердца и поцелуев */
+.heart, .kiss {
+    font-size: 30px;
+    animation: float 3s ease-in-out infinite;
+    position: absolute;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
